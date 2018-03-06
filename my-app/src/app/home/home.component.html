@@ -1,0 +1,13 @@
+<p>
+  {{ homeGreeting }}
+</p>
+<ng-content></ng-content>
+
+<input [(ngModel)]="poopString">
+
+<p>'{{poopString}}' is what you said.</p>
+<p>'{{lastPoopString}}' is what you said before.</p>
+<br />
+<button (click)="poop()">update</button>
+<p>also I pooped {{this.myPoop.count}} of {{this.myPoop.poop}} poop</p>
+<button (click)="firePoopEvent($event)">poop</button>
